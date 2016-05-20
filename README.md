@@ -49,6 +49,12 @@ INSERT INTO customer (name, email, phone, address)
 VALUES ('kingsley', 'kingsley@email.com', '080', 'lagos');
 ```
 
+####Delete customer with name kingsley from customer table
+```sql 
+DELETE FROM customer
+WHERE customer.name='kingsley';
+```
+
 
 
 
