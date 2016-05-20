@@ -14,7 +14,7 @@
 ###Queries
 #####Basic queries that can be done on the table
 ####Get all customers
-#####..*    SELECT name, phone, email FROM customer;
+..*    *SELECT name, phone, email FROM customer*;
 
 ####Get all customers from a particular address
 #####..*    SELECT name, phone, email, address FROM customer WHERE address = 'Lagos Street';
