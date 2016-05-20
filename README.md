@@ -43,6 +43,12 @@ SELECT task.task_name, task.item_qty, task.cost FROM task INNER JOIN customer ON
 SELECT * FROM task_list INNER JOIN task ON task.customer_is=task_list.customer_id ORDER BY task.customer_id;
 ```
 
+####Add customer details to customer table
+```sql 
+INSERT INTO customer (name, email, phone, address)
+VALUES ('kingsley', 'kingsley@email.com', '080', 'lagos');
+```
+
 
 
 
