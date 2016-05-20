@@ -13,6 +13,22 @@
 
 ###Queries
 #####Basic queries that can be done on the table
+####Get all customers
+#####..*    SELECT name, phone, email FROM customer
+
+####Get all customers from a particular address
+#####..*    SELECT name, phone, email, address FROM customer WHERE address = 'Lagos Street'
+
+####Get all customers from a particular address and with same email
+#####<p> SELECT name, phone, email, address FROM customer WHERE (address = 'Lagos Street) AND (email = 'myemail@mail.com') </p>
+
+#####<p>
+
+
+####Get all tasks names, item_qty, and cost  for a user_id 88
+#####..*    SELECT task.task_name, task.item_qty, task.cost FROM task INNER JOIN customer ON task.customer_id=customer.customer_id WHERE task.customer_id='88';
+
+#####<p>IN </P>
 
 
 
