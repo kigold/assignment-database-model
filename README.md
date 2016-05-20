@@ -39,7 +39,8 @@ SELECT task.task_name, task.item_qty, task.cost FROM task INNER JOIN customer ON
 ```
 
 ####Get all the items of and a customer in item list
-```sql SELECT * FROM task_list INNER JOIN task ON task.customer_is=task_list.customer_id ORDER BY task.customer_id;
+```sql 
+SELECT * FROM task_list INNER JOIN task ON task.customer_is=task_list.customer_id ORDER BY task.customer_id;
 ```
 
 
