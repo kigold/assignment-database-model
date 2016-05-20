@@ -14,14 +14,17 @@
 ###Queries
 ####Basic queries that can be done on the table
 ####Get all customers
-*    SELECT name, phone, email FROM customer;
+```sql SELECT name, phone, email FROM customer;
+```
 
 ####Get all customers from a particular address
-*    SELECT name, phone, email, address FROM customer WHERE address = 'Lagos Street';
+```sql
+SELECT name, phone, email, address FROM customer WHERE address = 'Lagos Street';
+```
 
 ####Get all customers from a particular address and with same email
 ```sql
-   SELECT name, phone, email, address FROM customer WHERE (address = Lagos Street) AND (email = myemail@mail.com);
+   SELECT name, phone, email, address FROM customer WHERE (address = 'Lagos' Street) AND (email = 'myemail@mail.com');
 ```
 
 ####Get all tasks names, item_qty, and cost and user details for a user_id 88
