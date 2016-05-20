@@ -4,7 +4,7 @@
 ![alt text](https://github.com/kigold/assignment-database-model/blob/development/db_model.png "Logo Title Text 1")
 
 ###Introduction
-#####This is a model of the customer interaction of a laundry service application, this model makes provision for all the basic data requirement of customer object with the laundry service application. Activities such as:-
+#####This is a model of the customer interaction with a laundry service application, this model makes provision for all the basic data requirement of the customer object with the laundry service application, data requirenents such as:-
 #####..*customer details
 #####..*customer tasks
 #####..*list of items in each tasks, etc
@@ -13,6 +13,7 @@
 
 ###Queries
 #####Basic queries that can be done on the table
+
 
 
 
