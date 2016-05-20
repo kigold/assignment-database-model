@@ -12,7 +12,7 @@
 #####The task table does not provide all the details of the task, it only has general details for the task, more specific details are found in the task_list table which is linked in a similar manner, via foreign key [task_id and task_customer_id], this task_list grants us the flexibility of listing multiple items under one task_id.
 
 ###Queries
-#####Basic queries that can be done on the table
+####Basic queries that can be done on the table
 ####Get all customers
 ..*    *SELECT name, phone, email FROM customer*;
 
@@ -25,11 +25,11 @@
 ####Get all tasks names, item_qty, and cost and user details for a user_id 88
 ..*    *SELECT task.task_name, task.item_qty, task.cost FROM task INNER JOIN customer ON task.customer_id=customer.customer_id WHERE task.customer_id='88';*
 
-#####Get all task of a customer of id 22, with the list ordered by the cost, that is arranged according to the cost
+####Get all task of a customer of id 22, with the list ordered by the cost, that is arranged according to the cost
 ..* *SEELECT * FROM task INNER JOIN customer ON task.customer_id=customer.customer_id WHERE task.customer_id='22' ORDER BY task.total_cost;*
 
-##### Get all the items of and a customer in item list
-*SELECT * FROM task_list INNER JOIN task ON task.customer_is=task_list.customer_id ORDER BY task.customer_id;*
+####Get all the items of and a customer in item list
+..* SELECT * FROM task_list INNER JOIN task ON task.customer_is=task_list.customer_id ORDER BY task.customer_id;*
 
 
 
